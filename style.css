@@ -55,3 +55,68 @@ button {
 img {
     width: 100%;
 }
+
+.section-content {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: var(--site-max-width);
+}
+
+/* header section styling */
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navbar .nav-logo .logo-text {
+    color: var(--accent-color);
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semibold);
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .nav-menu .nav-link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 10px;
+    border-radius: var(--border-radius-s);
+    background: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar .nav-menu .nav-link:hover {
+    color: var(--accent-color);
+}
+
+#menu-close-button , #menu-open-button{
+    display: none;
+}
