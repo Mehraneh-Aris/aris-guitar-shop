@@ -500,7 +500,7 @@ header .navbar {
 .gallery-section {
     padding: 50px 0 100px;
     background: var(--bg-color);
-    color: var(--text-color);
+    color: var(--white-color);
 }
 
 .gallery-section .gallery-list {
@@ -524,5 +524,71 @@ header .navbar {
 
 .gallery-section .gallery-item:hover .gallery-image {
     transform: scale(1.3);
+}
+
+/* contact us section styling */
+
+.contact-us-section {
+    padding: 50px 0 100px;
+    background: var(--bg-color);
+    color: var(--white-color);
+}
+
+.contact-us-section .section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.section-content .contact-info-list .contact-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact-section .contact-info-list .contact-info i {
+    font-size: var(--font-size-m);
+}
+
+.contact-us-section .contact-form{
+    max-width: 50%;
+}
+
+.contact-us-section .contact-form .form-input {
+    width: 100%;
+    height: 50px;
+    margin-bottom:16px;
+    padding: 0 12px;
+    border-radius: var(--border-radius-s);
+    color: var(--bg-color);
+    background: var(--white-color);
+    outline: none;
+    border: 1px solid var(--accent-color); 
+}
+
+.contact-us-section .contact-form textarea.form-input {
+    height: 100px;
+    padding: 12px;
+    resize: vertical;
+}
+
+.contact-us-section .contact-form .submit-button {
+    background: var(--accent-color);
+    padding: 10px 26px;
+    margin-top: 10px;
+    color: var(--white-color);
+    border-radius: var(--border-radius-m);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-m);
+    border: 1px solid var(--accent-color);
+    transition: 0.3s ease;
+}
+
+.contact-us-section .contact-form .submit-button:hover {
+    background: transparent;
+    color: var(--bg-color);
+    background: var(--white-color);
 }
 
