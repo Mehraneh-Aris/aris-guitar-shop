@@ -495,3 +495,34 @@ header .navbar {
     background: var(--bg-color);
 }
 
+/* gallery section styling */
+
+.gallery-section {
+    padding: 50px 0 100px;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.gallery-section .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.gallery-section .gallery-list .gallery-item {
+    width: calc((100% / 3) - 32px);
+    overflow: hidden;
+    border-radius: var(--border-radius-s);
+}
+
+.gallery-section .gallery-item .gallery-image {
+    width: 100%;
+    height: 100%;
+    cursor: zoom-in;
+    transition: 0.3s ease;
+}
+
+.gallery-section .gallery-item:hover .gallery-image {
+    transform: scale(1.3);
+}
+
